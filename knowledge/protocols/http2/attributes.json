@@ -1,0 +1,143 @@
+{
+  "protocol_id": 700,
+  "protocol_name": "http2",
+  "source": "MMT protocol iterator",
+  "attributes": [
+    {
+      "id": 1,
+      "name": "type",
+      "qualified_name": "http2.type",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 2,
+      "name": "header_method",
+      "qualified_name": "http2.header_method",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 3,
+      "name": "header_length",
+      "qualified_name": "http2.header_length",
+      "dpi_type": "MMT_U32_DATA",
+      "data_len": 4,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4,
+      "name": "header_stream_id",
+      "qualified_name": "http2.header_stream_id",
+      "dpi_type": "MMT_U32_DATA",
+      "data_len": 4,
+      "security_c_type": "double"
+    },
+    {
+      "id": 5,
+      "name": "payload_stream_id",
+      "qualified_name": "http2.payload_stream_id",
+      "dpi_type": "MMT_U32_DATA",
+      "data_len": 4,
+      "security_c_type": "double"
+    },
+    {
+      "id": 16,
+      "name": "payload_length",
+      "qualified_name": "http2.payload_length",
+      "dpi_type": "MMT_U32_DATA",
+      "data_len": 4,
+      "security_c_type": "double"
+    },
+    {
+      "id": 17,
+      "name": "payload_data",
+      "qualified_name": "http2.payload_data",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4096,
+      "name": "p_hdr",
+      "qualified_name": "http2.p_hdr",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4097,
+      "name": "p_data",
+      "qualified_name": "http2.p_data",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4098,
+      "name": "p_payload",
+      "qualified_name": "http2.p_payload",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4099,
+      "name": "packet_count",
+      "qualified_name": "http2.packet_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4100,
+      "name": "data_count",
+      "qualified_name": "http2.data_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4101,
+      "name": "payload_count",
+      "qualified_name": "http2.payload_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4102,
+      "name": "first_packet_time",
+      "qualified_name": "http2.first_packet_time",
+      "dpi_type": "MMT_DATA_TIMEVAL",
+      "data_len": 16,
+      "security_c_type": null
+    },
+    {
+      "id": 4103,
+      "name": "last_packet_time",
+      "qualified_name": "http2.last_packet_time",
+      "dpi_type": "MMT_DATA_TIMEVAL",
+      "data_len": 16,
+      "security_c_type": null
+    },
+    {
+      "id": 4104,
+      "name": "p_data_len",
+      "qualified_name": "http2.p_data_len",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4105,
+      "name": "stats",
+      "qualified_name": "http2.stats",
+      "dpi_type": "MMT_STATS",
+      "data_len": 8,
+      "security_c_type": null
+    }
+  ]
+}

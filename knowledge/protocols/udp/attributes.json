@@ -1,0 +1,119 @@
+{
+  "protocol_id": 376,
+  "protocol_name": "udp",
+  "source": "MMT protocol iterator",
+  "attributes": [
+    {
+      "id": 1,
+      "name": "src_port",
+      "qualified_name": "udp.src_port",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 2,
+      "name": "dest_port",
+      "qualified_name": "udp.dest_port",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 3,
+      "name": "len",
+      "qualified_name": "udp.len",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4,
+      "name": "checksum",
+      "qualified_name": "udp.checksum",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4096,
+      "name": "p_hdr",
+      "qualified_name": "udp.p_hdr",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4097,
+      "name": "p_data",
+      "qualified_name": "udp.p_data",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4098,
+      "name": "p_payload",
+      "qualified_name": "udp.p_payload",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4099,
+      "name": "packet_count",
+      "qualified_name": "udp.packet_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4100,
+      "name": "data_count",
+      "qualified_name": "udp.data_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4101,
+      "name": "payload_count",
+      "qualified_name": "udp.payload_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4102,
+      "name": "first_packet_time",
+      "qualified_name": "udp.first_packet_time",
+      "dpi_type": "MMT_DATA_TIMEVAL",
+      "data_len": 16,
+      "security_c_type": null
+    },
+    {
+      "id": 4103,
+      "name": "last_packet_time",
+      "qualified_name": "udp.last_packet_time",
+      "dpi_type": "MMT_DATA_TIMEVAL",
+      "data_len": 16,
+      "security_c_type": null
+    },
+    {
+      "id": 4104,
+      "name": "p_data_len",
+      "qualified_name": "udp.p_data_len",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4105,
+      "name": "stats",
+      "qualified_name": "udp.stats",
+      "dpi_type": "MMT_STATS",
+      "data_len": 8,
+      "security_c_type": null
+    }
+  ]
+}

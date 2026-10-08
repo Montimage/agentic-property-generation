@@ -1,0 +1,231 @@
+{
+  "protocol_id": 141,
+  "protocol_name": "gtp",
+  "source": "MMT protocol iterator",
+  "attributes": [
+    {
+      "id": 1,
+      "name": "version",
+      "qualified_name": "gtp.version",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 2,
+      "name": "proto_type",
+      "qualified_name": "gtp.proto_type",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 3,
+      "name": "reserved",
+      "qualified_name": "gtp.reserved",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4,
+      "name": "flag_ext_hdr",
+      "qualified_name": "gtp.flag_ext_hdr",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 5,
+      "name": "flag_seq_num",
+      "qualified_name": "gtp.flag_seq_num",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 6,
+      "name": "flag_ndpu_num",
+      "qualified_name": "gtp.flag_ndpu_num",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 7,
+      "name": "flags",
+      "qualified_name": "gtp.flags",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 8,
+      "name": "msg_type",
+      "qualified_name": "gtp.msg_type",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 9,
+      "name": "length",
+      "qualified_name": "gtp.length",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 10,
+      "name": "teid",
+      "qualified_name": "gtp.teid",
+      "dpi_type": "MMT_U32_DATA",
+      "data_len": 4,
+      "security_c_type": "double"
+    },
+    {
+      "id": 11,
+      "name": "seq_num",
+      "qualified_name": "gtp.seq_num",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 12,
+      "name": "imsi_mmc",
+      "qualified_name": "gtp.imsi_mmc",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 13,
+      "name": "imsi_mnc",
+      "qualified_name": "gtp.imsi_mnc",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 14,
+      "name": "next_hdr_type",
+      "qualified_name": "gtp.next_hdr_type",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 15,
+      "name": "ext_pdu_length",
+      "qualified_name": "gtp.ext_pdu_length",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 16,
+      "name": "ext_pdu_type",
+      "qualified_name": "gtp.ext_pdu_type",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 17,
+      "name": "ext_pdu_qfi",
+      "qualified_name": "gtp.ext_pdu_qfi",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 18,
+      "name": "ext_pdu_next_hdr_type",
+      "qualified_name": "gtp.ext_pdu_next_hdr_type",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4096,
+      "name": "p_hdr",
+      "qualified_name": "gtp.p_hdr",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4097,
+      "name": "p_data",
+      "qualified_name": "gtp.p_data",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4098,
+      "name": "p_payload",
+      "qualified_name": "gtp.p_payload",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4099,
+      "name": "packet_count",
+      "qualified_name": "gtp.packet_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4100,
+      "name": "data_count",
+      "qualified_name": "gtp.data_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4101,
+      "name": "payload_count",
+      "qualified_name": "gtp.payload_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4102,
+      "name": "first_packet_time",
+      "qualified_name": "gtp.first_packet_time",
+      "dpi_type": "MMT_DATA_TIMEVAL",
+      "data_len": 16,
+      "security_c_type": null
+    },
+    {
+      "id": 4103,
+      "name": "last_packet_time",
+      "qualified_name": "gtp.last_packet_time",
+      "dpi_type": "MMT_DATA_TIMEVAL",
+      "data_len": 16,
+      "security_c_type": null
+    },
+    {
+      "id": 4104,
+      "name": "p_data_len",
+      "qualified_name": "gtp.p_data_len",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4105,
+      "name": "stats",
+      "qualified_name": "gtp.stats",
+      "dpi_type": "MMT_STATS",
+      "data_len": 8,
+      "security_c_type": null
+    }
+  ]
+}

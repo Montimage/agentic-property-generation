@@ -1,0 +1,37 @@
+{
+    "id": "ngap_example_001",
+    "property_id": "101",
+
+    "description": "Detect an abnormal number of registration-related requests originating from the same source within a limited time window.",
+
+    "protocols": [
+        "NGAP"
+    ],
+
+    "monitoring_point": "AMF",
+
+    "requirements": [
+        "Identify registration-related signaling events.",
+        "Correlate events originating from the same source.",
+        "Evaluate the number of relevant events within a temporal window.",
+        "Generate an alert when the configured threshold is exceeded."
+    ],
+
+    "restrictions": [
+        "Only use protocol attributes observable by MMT.",
+        "The generated output must conform to the MMT event-based property format."
+    ],
+
+    "expected_behavior": "The property should trigger when the number of relevant registration events from the same source exceeds the configured threshold within the specified time window.",
+
+    "ambiguities": [
+        "The numerical threshold that defines an abnormal number of registration-related requests is not specified.",
+        "The duration of the limited time window is not specified.",
+        "The task does not define how the same source should be represented using available protocol attributes."
+    ],
+
+    "metadata": {
+        "domain": "5G Core Network",
+        "source": "example"
+    }
+}

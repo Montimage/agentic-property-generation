@@ -1,0 +1,143 @@
+{
+  "protocol_id": 631,
+  "protocol_name": "sctp_data",
+  "source": "MMT protocol iterator",
+  "attributes": [
+    {
+      "id": 1,
+      "name": "ch_type",
+      "qualified_name": "sctp_data.ch_type",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 2,
+      "name": "ch_flags",
+      "qualified_name": "sctp_data.ch_flags",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 3,
+      "name": "ch_length",
+      "qualified_name": "sctp_data.ch_length",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4,
+      "name": "data_tsn",
+      "qualified_name": "sctp_data.data_tsn",
+      "dpi_type": "MMT_U32_DATA",
+      "data_len": 4,
+      "security_c_type": "double"
+    },
+    {
+      "id": 5,
+      "name": "data_stream",
+      "qualified_name": "sctp_data.data_stream",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 6,
+      "name": "data_ssn",
+      "qualified_name": "sctp_data.data_ssn",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 7,
+      "name": "data_ppid",
+      "qualified_name": "sctp_data.data_ppid",
+      "dpi_type": "MMT_U32_DATA",
+      "data_len": 4,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4096,
+      "name": "p_hdr",
+      "qualified_name": "sctp_data.p_hdr",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4097,
+      "name": "p_data",
+      "qualified_name": "sctp_data.p_data",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4098,
+      "name": "p_payload",
+      "qualified_name": "sctp_data.p_payload",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4099,
+      "name": "packet_count",
+      "qualified_name": "sctp_data.packet_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4100,
+      "name": "data_count",
+      "qualified_name": "sctp_data.data_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4101,
+      "name": "payload_count",
+      "qualified_name": "sctp_data.payload_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4102,
+      "name": "first_packet_time",
+      "qualified_name": "sctp_data.first_packet_time",
+      "dpi_type": "MMT_DATA_TIMEVAL",
+      "data_len": 16,
+      "security_c_type": null
+    },
+    {
+      "id": 4103,
+      "name": "last_packet_time",
+      "qualified_name": "sctp_data.last_packet_time",
+      "dpi_type": "MMT_DATA_TIMEVAL",
+      "data_len": 16,
+      "security_c_type": null
+    },
+    {
+      "id": 4104,
+      "name": "p_data_len",
+      "qualified_name": "sctp_data.p_data_len",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4105,
+      "name": "stats",
+      "qualified_name": "sctp_data.stats",
+      "dpi_type": "MMT_STATS",
+      "data_len": 8,
+      "security_c_type": null
+    }
+  ]
+}

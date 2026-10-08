@@ -1,0 +1,93 @@
+[
+  {
+    "property_id": "41",
+    "file": "properties/41.SCTP_INIT_scan.xml",
+    "validated": true,
+    "property_type": "ATTACK",
+    "description": "Probable SCTP INIT scan based on four consecutive SCTP INIT attempts targeting different destination ports while preserving the same source and destination IP addresses.",
+    "protocols": [
+      "sctp",
+      "ip"
+    ],
+    "tags": [
+      "sctp",
+      "scan",
+      "init",
+      "port_scan",
+      "repeated_events",
+      "same_source",
+      "same_destination",
+      "different_ports"
+    ],
+    "constructs": [
+      "multiple_events",
+      "multiple_operators",
+      "temporal_sequence",
+      "cross_event_reference",
+      "event_correlation",
+      "equality_comparison",
+      "inequality_comparison"
+    ]
+  },
+  {
+    "property_id": "91",
+    "file": "properties/91.malformed_ngap_pkt.xml",
+    "validated": true,
+    "property_type": "ATTACK",
+    "description": "5G UE authentication hijack property correlating an Authentication Request and Authentication Response on the same SCTP stream, with the same AMF UE identifier and a different RAN UE identifier.",
+    "protocols": [
+      "ngap",
+      "nas_5g",
+      "sctp_data"
+    ],
+    "tags": [
+      "5g",
+      "authentication",
+      "authentication_hijack",
+      "ue",
+      "identifier_mismatch",
+      "same_stream",
+      "event_correlation"
+    ],
+    "constructs": [
+      "multiple_events",
+      "temporal_sequence",
+      "cross_event_reference",
+      "multi_protocol_correlation",
+      "equality_comparison",
+      "inequality_comparison"
+    ]
+  },
+  {
+    "property_id": "96",
+    "file": "properties/96.http2_dos_recognition.xml",
+    "validated": true,
+    "property_type": "ATTACK",
+    "description": "5G HTTP/2 denial-of-service detection property that identifies relevant HTTP/2 traffic and uses an embedded function to count messages within millisecond windows and compare the observed throughput against a configurable threshold.",
+    "protocols": [
+      "http2",
+      "ip",
+      "meta"
+    ],
+    "tags": [
+      "5g",
+      "http2",
+      "dos",
+      "flooding",
+      "throughput",
+      "rate",
+      "threshold",
+      "packet_counting"
+    ],
+    "constructs": [
+      "multiple_events",
+      "temporal_sequence",
+      "embedded_function",
+      "embedded_function_call",
+      "stateful_counting",
+      "configurable_threshold",
+      "environment_variable",
+      "time_window"
+    ]
+  }
+]

@@ -1,0 +1,367 @@
+{
+  "protocol_id": 178,
+  "protocol_name": "ip",
+  "source": "MMT protocol iterator",
+  "attributes": [
+    {
+      "id": 1,
+      "name": "version",
+      "qualified_name": "ip.version",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 2,
+      "name": "header_len",
+      "qualified_name": "ip.header_len",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 3,
+      "name": "proto_tos",
+      "qualified_name": "ip.proto_tos",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4,
+      "name": "tot_len",
+      "qualified_name": "ip.tot_len",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 5,
+      "name": "identification",
+      "qualified_name": "ip.identification",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 6,
+      "name": "rf_flag",
+      "qualified_name": "ip.rf_flag",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 7,
+      "name": "df_flag",
+      "qualified_name": "ip.df_flag",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 8,
+      "name": "mf_flag",
+      "qualified_name": "ip.mf_flag",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 9,
+      "name": "frag_offset",
+      "qualified_name": "ip.frag_offset",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 10,
+      "name": "proto_ttl",
+      "qualified_name": "ip.proto_ttl",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 11,
+      "name": "proto_id",
+      "qualified_name": "ip.proto_id",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 12,
+      "name": "checksum",
+      "qualified_name": "ip.checksum",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 13,
+      "name": "src",
+      "qualified_name": "ip.src",
+      "dpi_type": "MMT_DATA_IP_ADDR",
+      "data_len": 4,
+      "security_c_type": "const char *"
+    },
+    {
+      "id": 14,
+      "name": "dst",
+      "qualified_name": "ip.dst",
+      "dpi_type": "MMT_DATA_IP_ADDR",
+      "data_len": 4,
+      "security_c_type": "const char *"
+    },
+    {
+      "id": 15,
+      "name": "options",
+      "qualified_name": "ip.options",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 16,
+      "name": "opts_type",
+      "qualified_name": "ip.opts_type",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 17,
+      "name": "padding_check",
+      "qualified_name": "ip.padding_check",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 19,
+      "name": "client_addr",
+      "qualified_name": "ip.client_addr",
+      "dpi_type": "MMT_DATA_IP_ADDR",
+      "data_len": 4,
+      "security_c_type": "const char *"
+    },
+    {
+      "id": 20,
+      "name": "server_addr",
+      "qualified_name": "ip.server_addr",
+      "dpi_type": "MMT_DATA_IP_ADDR",
+      "data_len": 4,
+      "security_c_type": "const char *"
+    },
+    {
+      "id": 21,
+      "name": "client_port",
+      "qualified_name": "ip.client_port",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 22,
+      "name": "server_port",
+      "qualified_name": "ip.server_port",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 23,
+      "name": "ip_frag_packets_count",
+      "qualified_name": "ip.ip_frag_packets_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 24,
+      "name": "ip_frag_data_volume",
+      "qualified_name": "ip.ip_frag_data_volume",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 25,
+      "name": "ip_df_packets_count",
+      "qualified_name": "ip.ip_df_packets_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 26,
+      "name": "ip_df_data_volume",
+      "qualified_name": "ip.ip_df_data_volume",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 27,
+      "name": "ip_session_count",
+      "qualified_name": "ip.ip_session_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 28,
+      "name": "ip_active_session_count",
+      "qualified_name": "ip.ip_active_session_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 29,
+      "name": "ip_timedout_session_count",
+      "qualified_name": "ip.ip_timedout_session_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 30,
+      "name": "ecn",
+      "qualified_name": "ip.ecn",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 31,
+      "name": "jitter",
+      "qualified_name": "ip.jitter",
+      "dpi_type": "MMT_DATA_TIMEVAL",
+      "data_len": 16,
+      "security_c_type": null
+    },
+    {
+      "id": 32,
+      "name": "l4s_marked",
+      "qualified_name": "ip.l4s_marked",
+      "dpi_type": "MMT_U8_DATA",
+      "data_len": 1,
+      "security_c_type": "double"
+    },
+    {
+      "id": 33,
+      "name": "l4s_queue_delay",
+      "qualified_name": "ip.l4s_queue_delay",
+      "dpi_type": "MMT_DATA_FLOAT",
+      "data_len": 4,
+      "security_c_type": "double"
+    },
+    {
+      "id": 34,
+      "name": "l4s_nb_drops",
+      "qualified_name": "ip.l4s_nb_drops",
+      "dpi_type": "MMT_U16_DATA",
+      "data_len": 2,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4096,
+      "name": "p_hdr",
+      "qualified_name": "ip.p_hdr",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4097,
+      "name": "p_data",
+      "qualified_name": "ip.p_data",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4098,
+      "name": "p_payload",
+      "qualified_name": "ip.p_payload",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4099,
+      "name": "packet_count",
+      "qualified_name": "ip.packet_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4100,
+      "name": "data_count",
+      "qualified_name": "ip.data_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4101,
+      "name": "payload_count",
+      "qualified_name": "ip.payload_count",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4102,
+      "name": "first_packet_time",
+      "qualified_name": "ip.first_packet_time",
+      "dpi_type": "MMT_DATA_TIMEVAL",
+      "data_len": 16,
+      "security_c_type": null
+    },
+    {
+      "id": 4103,
+      "name": "last_packet_time",
+      "qualified_name": "ip.last_packet_time",
+      "dpi_type": "MMT_DATA_TIMEVAL",
+      "data_len": 16,
+      "security_c_type": null
+    },
+    {
+      "id": 4104,
+      "name": "p_data_len",
+      "qualified_name": "ip.p_data_len",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    },
+    {
+      "id": 4105,
+      "name": "stats",
+      "qualified_name": "ip.stats",
+      "dpi_type": "MMT_STATS",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4106,
+      "name": "session",
+      "qualified_name": "ip.session",
+      "dpi_type": "MMT_DATA_POINTER",
+      "data_len": 8,
+      "security_c_type": null
+    },
+    {
+      "id": 4107,
+      "name": "session_id",
+      "qualified_name": "ip.session_id",
+      "dpi_type": "MMT_U64_DATA",
+      "data_len": 8,
+      "security_c_type": "double"
+    }
+  ]
+}

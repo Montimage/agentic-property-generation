@@ -1,0 +1,20 @@
+{
+  "id": "ngap_explicit_001",
+  "property_id": "102",
+  "description": "Detect two NGAP messages satisfying procedure_code == 4 for the same AMF UE identifier within 10 seconds.",
+  "protocols": [
+    "ngap"
+  ],
+  "requirements": [
+    "The first event must satisfy ngap.procedure_code == 4.",
+    "The second event must satisfy ngap.procedure_code == 4.",
+    "The second event must refer to the same ngap.amf_ue_id as the first event.",
+    "The two events must occur in sequence within 10 seconds."
+  ],
+  "restrictions": [
+    "Do not introduce additional procedure codes.",
+    "Do not introduce additional protocol attributes."
+  ],
+  "ambiguities": [],
+  "expected_behavior": "The property is satisfied when two matching NGAP events for the same AMF UE identifier occur within the specified 10-second window."
+}
